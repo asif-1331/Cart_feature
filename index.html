@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    maxWidth: {
+                        container: '1320px'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    },
+                    fontWeight: {
+                        light: '300',
+                        normal: '400',
+                        medium: '500',
+                        semibold: '600',
+                        bold: '700'
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="font-poppins">
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="bg-amber-600">
+            <div class="max-w-container m-auto">
+                <div class="nav__wrapper flex justify-between items-center w-full justify-between py-4">
+                    <div class="logo text-2xl text-white">Foodie</div>
+                    <div class="cart__icon cursor-pointer flex">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 18 21">
+                            <path
+                                d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                        </svg>
+                        <div
+                            class="cart__items h-[20px] w-[20px] bg-white rounded-[50%] ml-1 flex self-center justify-center text-sm flex justify-center items-center">
+                            0</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- SIDEBAR -->
+
+    <div class="cart__sidebar w-[500px] bg-amber-200 grid__row__3">
+
+        <h1 class="text-2xl p-5 font-bold">Food Cart</h1>
+
+        <!-- CART ITEMS -->
+
+        <div class="food__list px-5 flex flex-col gap-4">
+            <!-- <div class="product grid__row__4">
+                <img class="product__img w-[100%] object-cover rounded-[1rem]" src="./assets/pizza.jpg" alt=""
+                    srcset="">
+
+                <h1 class="text-lg  font-bold">Italian pizza with extra cheese</h1>
+                <div class="font-bold flex justify-between items-center">$10</div>
+                <div class="quantity">
+                    <span class="remove rounded-[1rem] bg-amber-100 cursor-pointer">-</span>
+                    <span>1</span>
+                    <span class="add rounded-[1rem] bg-amber-100 cursor-pointer">+</span>
+                </div>
+
+            </div> -->
+            
+        </div>
+
+        <div class="sidebar__btns grid grid-cols-2">
+            <button type="button"
+                class="close bg-amber-100 text-xl border-none hover:opacity-50 cursor-pointer">Close</button>
+            <button type="button"
+                class="checkout bg-amber-600 text-xl border-none hover:opacity-50 cursor-pointer">Checkout</button>
+        </div>
+    </div>
+
+    <!-- MENU ITEMS -->
+
+    <div class="max-w-container m-auto font-poppins">
+        <div class="menu__items grid grid-cols-3 gap-4 mt-4">
+
+            <!-- <div class="item bg-amber-100 px-4 py-4 rounded-[1rem]">
+                <div class="item__img">
+                    <img class="w-[100%] h-[17rem] object-cover rounded-[1rem]" src="./assets/pizza.jpg">
+                </div>
+
+                <div class="item__content mt-4">
+                    <h5 class="text-2xl font-semibold tracking-tight text-gray-900">Italian pizza with extra cheese</h5>
+
+
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-2xl font-bold ">$10</span>
+                        <a href="#"
+                            class="text-white bg-amber-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

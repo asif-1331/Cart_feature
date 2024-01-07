@@ -1,0 +1,39 @@
+@layer utilities {
+    .grid__row__3{
+        display: grid;
+        grid-template-rows: 70px 1fr 70px;
+    }
+
+    .grid__row__4{
+        display: grid;
+        grid-template-columns: 70px 150px 50px 1fr;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cart__sidebar{
+        position: fixed;
+        inset: 0 0 0 auto;
+        transform: translateX(100%);
+        transition: all .5s ease-in;
+    }
+
+    .show__cart{
+        transform: translateX(0%);
+    }
+    
+
+    .quantity span{
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .food__list{
+        overflow: auto;
+    }
+
+    .food__list::-webkit-scrollbar{
+        width: 0;
+    }
+}
